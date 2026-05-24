@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1f1f27;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 100px;
+}
+
+@font-face { 
+    font-family: 'Formula1Wide'; 
+    src: url('../Font/Formula1-Wide_web_0.ttf') format('truetype'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'f1Black';
+    src: url('../Font/Formula1-Black.ttf');
+    font-weight: normal; 
+    font-style: normal;
+}
+
+header {
+    height: 80px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    background-image: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 10px,
+        rgba(255, 255, 255, 0.10) 10px,
+        rgba(255, 255, 255, 0.10) 20px
+    );
+}
+
+.logo {
+    height: 40px;
+}
+
+.titoloHeader {
+    color: white;
+    font-family: 'Racing Sans One', sans-serif;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 20pt;
+    letter-spacing: -2px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0 !important;
+}
+
+.titoloHeader span {
+    position: relative;
+    top: 1.5px;
+    font-weight: bold !important;
+}
+
+ul {
+    display: flex !important;
+    list-style-type: none !important;
+    gap: 10px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+li {
+    height: 40px !important;
+    padding: 0 15px !important;
+    border-radius: 10px !important;
+    background-color: #1a1a1a !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: transform 0.2s, box-shadow 0.2s !important;
+    width: auto !important;
+}
+
+li a {
+    color: #FFFFFF !important;
+    text-decoration: none !important;
+    font-size: 11pt !important;
+    width: 100% !important;
+    text-align: center !important;
+    display: block !important;
+    font-family: sans-serif !important;
+}
+
+li:hover {
+    transform: scale(1.05) !important;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3) !important;
+    cursor: pointer !important;
+    background-color: #2a2a2a !important;
+}
+
+#card{
+    margin-top: 100px;
+}
+
+#testo{
+    font-family: "f1Black", sans-serif;
+}

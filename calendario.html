@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScuderieF12026</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/calendario.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="titoloHeader">
+            <img src="Img/f1LogoHeader.png" alt="Logo Formula 1" class="logo">
+            <span>PROJECT</span>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="scuderie.html">Piloti&Team</a></li>
+                <li><a href="calendario.html">Calendario</a></li>
+                <li><a href="classifiche.html">Classifiche</a></li>
+                <li><a href="circuiti.html">Circuiti</a></li>
+                <li><a href="campioni.html">Campioni</a></li>
+                <li><a href="minigiochi.html">Giochi</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="table-responsive container" id="tabella">
+        <table class="table table-sm table-secondary table-striped-columns table-hover text-center">
+            <thead>
+                <tr class="table-active text-white border-bottom border-black">
+                    <th colspan="5" class="p-2 fs-6 text-uppercase fw-bold border-3">
+                        CALENDARIO FORMULA 1
+                    </th>
+                </tr>
+                <tr class="table-active">
+                    <th class="p-2 border border-black border-3">DATA</th>
+                    <th class="p-2 border border-black border-3">GRAN PREMIO</th>
+                    <th class="p-2 border border-black border-3">CIRCUITO</th>
+                    <th class="p-2 border border-black border-3">LUNGHEZZA</th>
+                    <th class="p-2 border border-black border-3">GIRI</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="p-2 border border-black border-3">6-8 Marzo</td>
+                    <td class="p-2 border border-black border-3">GP Australia</td>
+                    <td class="p-2 border border-black border-3">Albert Park Circuit</td>
+                    <td class="p-2 border border-black border-3">5.278 km</td>
+                    <td class="p-2 border border-black border-3">58</td>
+                </tr>
+                <tr>
+                    <td class="p-2 border border-black border-3">13-15 Marzo</td>
+                    <td class="p-2 border border-black border-3">GP Cina</td>
+                    <td class="p-2 border border-black border-3">Shanghai International Circuit</td>
+                    <td class="p-2 border border-black border-3">5.451 km</td>
+                    <td class="p-2 border border-black border-3">56</td>
+                </tr>
+
+                <tr>
+                    <td class="p-2 border border-black border-3">27-29 Marzo</td>
+                    <td class="p-2 border border-black border-3">GP Giappone</td>
+                    <td class="p-2 border border-black border-3">Suzuka International Circuit</td>
+                    <td class="p-2 border border-black border-3">5.807 km</td>
+                    <td class="p-2 border border-black border-3">53</td>
+                </tr>
+                <tr>
+                    <td class="p-2 border border-black border-3">22-24 Maggio</td>
+                    <td class="p-2 border border-black border-3">GP Canada</td>
+                    <td class="p-2 border border-black border-3">Circuit Gilles Villeneuve</td>
+                    <td class="p-2 border border-black border-3">4.361 km</td>
+                    <td class="p-2 border border-black border-3">70</td>
+                </tr>
+                <tr>
+                    <td class="p-2 border border-black border-3">5-7 Giugno</td>
+                    <td class="p-2 border border-black border-3">GP Monaco</td>
+                    <td class="p-2 border border-black border-3">Circuit de Monaco</td>
+                    <td class="p-2 border border-black border-3">3.337 km</td>
+                    <td class="p-2 border border-black border-3">78</td>
+                </tr>
+                <tr>
+                    <td class="p-2 border border-black border-3">12-14 Giugno</td>
+                    <td class="p-2 border border-black border-3">GP Catalunya</td>
+                    <td class="p-2 border border-black border-3">Circuit de Barcelona-Catalunya</td>
+                    <td class="p-2 border border-black border-3">4.657 km</td>
+                    <td class="p-2 border border-black border-3">66</td>
+                </tr>
+                <tr>
+                    <td class="p-2 border border-black border-3">26-28 Giugno</td>
+                    <td class="p-2 border border-black border-3">GP Austria</td>
+                    <td class="p-2 border border-black border-3">Red Bull Ring</td>
+                    <td class="p-2 border border-black border-3">4.326 km</td>
+                    <td class="p-2 border border-black border-3">71</td>
+                </tr>
+                <tr>
+                    <td class="p-2 border border-black border-3">3-5 Luglio</td>
+                    <td class="p-2 border border-black border-3">GP Gran Bretagna</td>
+                    <td class="p-2 border border-black border-3">Silverstone Circuit</td>
+                    <td class="p-2 border border-black border-3">5.891 km</td>
+                    <td class="p-2 border border-black border-3">52</td>
+                </tr>
+                <tr>
+                    <td class="p-2 border border-black border-3">17-19 Luglio</td>
+                    <td class="p-2 border border-black border-3">GP Belgio</td>
+                    <td class="p-2 border border-black border-3">Circuit de Spa-Francorchamps</td>
+                    <td class="p-2 border border-black border-3">7.004 km</td>
+                    <td class="p-2 border border-black border-3">44</td>
+                </tr>
+                <tr>
+                    <td class="p-2 border border-black border-3">24-26 Luglio</td>
+                    <td class="p-2 border border-black border-3">GP Ungheria</td>
+                    <td class="p-2 border border-black border-3">Hungaroring</td>
+                    <td class="p-2 border border-black border-3">4.381 km</td>
+                    <td class="p-2 border border-black border-3">70</td>
+                </tr>
+                <tr>
+                    <td class="p-2 border border-black border-3">21-23 Agosto</td>
+                    <td class="p-2 border border-black border-3">GP Olanda</td>
+                    <td class="p-2 border border-black border-3">Circuito di Zandvoort</td>
+                    <td class="p-2 border border-black border-3">4.259 km</td>
+                    <td class="p-2 border border-black border-3">72</td>
+                </tr>
+                <tr>
+                    <td class="p-2 border border-black border-3">4-6 Settembre</td>
+                    <td class="p-2 border border-black border-3">GP Monza</td>
+                    <td class="p-2 border border-black border-3">Circuito Nazionale Monza</td>
+                    <td class="p-2 border border-black border-3">5.793 km</td>
+                    <td class="p-2 border border-black border-3">53</td>
+                </tr>
+                <tr>
+                    <td class="p-2 border border-black border-3">11-13 Settembre</td>
+                    <td class="p-2 border border-black border-3">GP Spagna</td>
+                    <td class="p-2 border border-black border-3">Nuovo Circuito Cittadino di Madrid</td>
+                    <td class="p-2 border border-black border-3">5.416 km</td>
+                    <td class="p-2 border border-black border-3">57</td>
+                </tr>
+                <tr>
+                    <td class="p-2 border border-black border-3">24-26 Settembre</td>
+                    <td class="p-2 border border-black border-3">GP Azerbaijan</td>
+                    <td class="p-2 border border-black border-3">Circuito di Baku</td>
+                    <td class="p-2 border border-black border-3">6.003 km</td>
+                    <td class="p-2 border border-black border-3">51</td>
+                </tr>
+                <tr>
+                    <td class="p-2 border border-black border-3">9-11 Ottobre</td>
+                    <td class="p-2 border border-black border-3">GP Singapore</td>
+                    <td class="p-2 border border-black border-3">Marina Bay Street Circuit</td>
+                    <td class="p-2 border border-black border-3">4.927 km</td>
+                    <td class="p-2 border border-black border-3">62</td>
+                </tr>
+                <tr>
+                    <td class="p-2 border border-black border-3">23-25 Ottobre</td>
+                    <td class="p-2 border border-black border-3">GP Austin</td>
+                    <td class="p-2 border border-black border-3">Circuito delle Americhe (Austin)</td>
+                    <td class="p-2 border border-black border-3">5.513 km</td>
+                    <td class="p-2 border border-black border-3">56</td>
+                </tr>
+                <tr>
+                    <td class="p-2 border border-black border-3">30 Ottobre - 1 Novembre</td>
+                    <td class="p-2 border border-black border-3">GP Messico</td>
+                    <td class="p-2 border border-black border-3">Autódromo Hermanos Rodríguez</td>
+                    <td class="p-2 border border-black border-3">4.304 km</td>
+                    <td class="p-2 border border-black border-3">71</td>
+                </tr>
+                <tr>
+                    <td class="p-2 border border-black border-3">6-8 Novembre</td>
+                    <td class="p-2 border border-black border-3">GP Brasile</td>
+                    <td class="p-2 border border-black border-3">Interlagos</td>
+                    <td class="p-2 border border-black border-3">4.309 km</td>
+                    <td class="p-2 border border-black border-3">71</td>
+                </tr>
+                <tr>
+                    <td class="p-2 border border-black border-3">20-22 Novembre</td>
+                    <td class="p-2 border border-black border-3">GP Las Vegas</td>
+                    <td class="p-2 border border-black border-3">Las Vegas Strip Circuit</td>
+                    <td class="p-2 border border-black border-3">6.201 km</td>
+                    <td class="p-2 border border-black border-3">50</td>
+                </tr>
+                <tr>
+                    <td class="p-2 border border-black border-3">27-29 Novembre</td>
+                    <td class="p-2 border border-black border-3">GP Qatar</td>
+                    <td class="p-2 border border-black border-3">Lusail International Circuit</td>
+                    <td class="p-2 border border-black border-3">5.419 km</td>
+                    <td class="p-2 border border-black border-3">57</td>
+                </tr>
+                <tr>
+                    <td class="p-2 border border-black border-3">4-6 Dicembre</td>
+                    <td class="p-2 border border-black border-3">GP Abu Dhabi</td>
+                    <td class="p-2 border border-black border-3">Yas Marina Circuit</td>
+                    <td class="p-2 border border-black border-3">5.281 km</td>
+                    <td class="p-2 border border-black border-3">58</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!--LAYOUT CON NOME DELLA NAZIONE OSPITANTE-->
+    <div class="container py-4" id="circuitiLayout">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+            <div class="col">
+                <div class="card h-100 bg-dark text-white border-0 overflow-hidden">
+                    <div class="card-header bg-white p-0 d-flex align-items-center justify-content-center">
+                        <img src="Img/F1 Race Tracks Layout Information/Australia_Albert_Park.png" class="img-fluid"
+                            alt="Australia">
+                    </div>
+                    <div class="card-body d-flex justify-content-center align-items-center">
+                        <h5 class="card-title text-center mb-0">Australia</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 bg-dark text-white border-0 overflow-hidden">
+                    <div class="card-header bg-white p-0 d-flex align-items-center justify-content-center">
+                        <img src="Img/F1 Race Tracks Layout Information/China_Shanghai_International.png"
+                            class="img-fluid" alt="Cina">
+                    </div>
+                    <div class="card-body d-flex justify-content-center align-items-center">
+                        <h5 class="card-title text-center mb-0">Cina</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 bg-dark text-white border-0 overflow-hidden">
+                    <div class="card-header bg-white p-0 d-flex align-items-center justify-content-center">
+                        <img src="Img/F1 Race Tracks Layout Information/Japan_Suzuka.png" class="img-fluid"
+                            alt="Giappone">
+                    </div>
+                    <div class="card-body d-flex justify-content-center align-items-center">
+                        <h5 class="card-title text-center mb-0">Giappone</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 bg-dark text-white border-0 overflow-hidden">
+                    <div class="card-header bg-white p-0 d-flex align-items-center justify-content-center">
+                        <img src="Img/F1 Race Tracks Layout Information/Canada_Gilles_Villeneuve.png" class="img-fluid"
+                            alt="Canada">
+                    </div>
+                    <div class="card-body d-flex justify-content-center align-items-center">
+                        <h5 class="card-title text-center mb-0">Canada</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 bg-dark text-white border-0 overflow-hidden">
+                    <div class="card-header bg-white p-0 d-flex align-items-center justify-content-center">
+                        <img src="Img/F1 Race Tracks Layout Information/Monaco_Circuit_de_Monaco.png" class="img-fluid"
+                            alt="Monaco">
+                    </div>
+                    <div class="card-body d-flex justify-content-center align-items-center">
+                        <h5 class="card-title text-center mb-0">Monaco</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 bg-dark text-white border-0 overflow-hidden">
+                    <div class="card-header bg-white p-0 d-flex align-items-center justify-content-center">
+                        <img src="Img/F1 Race Tracks Layout Information/Spain_Barcelona_Catalunya.png" class="img-fluid"
+                            alt="Catalunya">
+                    </div>
+                    <div class="card-body d-flex justify-content-center align-items-center">
+                        <h5 class="card-title text-center mb-0">Catalunya</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 bg-dark text-white border-0 overflow-hidden">
+                    <div class="card-header bg-white p-0 d-flex align-items-center justify-content-center">
+                        <img src="Img/F1 Race Tracks Layout Information/Austria_Red_Bull_Ring.png" class="img-fluid"
+                            alt="Austria">
+                    </div>
+                    <div class="card-body d-flex justify-content-center align-items-center">
+                        <h5 class="card-title text-center mb-0">Austria</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 bg-dark text-white border-0 overflow-hidden">
+                    <div class="card-header bg-white p-0 d-flex align-items-center justify-content-center">
+                        <img src="Img/F1 Race Tracks Layout Information/Great_Britain_Silverstone.png" class="img-fluid"
+                            alt="Gran Bretagna">
+                    </div>
+                    <div class="card-body d-flex justify-content-center align-items-center">
+                        <h5 class="card-title text-center mb-0">Gran Bretagna</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 bg-dark text-white border-0 overflow-hidden">
+                    <div class="card-header bg-white p-0 d-flex align-items-center justify-content-center">
+                        <img src="Img/F1 Race Tracks Layout Information/Belgium_Spa_Francorchamps.png" class="img-fluid"
+                            alt="Belgio">
+                    </div>
+                    <div class="card-body d-flex justify-content-center align-items-center">
+                        <h5 class="card-title text-center mb-0">Belgio</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 bg-dark text-white border-0 overflow-hidden">
+                    <div class="card-header bg-white p-0 d-flex align-items-center justify-content-center">
+                        <img src="Img/F1 Race Tracks Layout Information/Hungary_Hungaroring.png" class="img-fluid"
+                            alt="Ungheria">
+                    </div>
+                    <div class="card-body d-flex justify-content-center align-items-center">
+                        <h5 class="card-title text-center mb-0">Ungheria</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 bg-dark text-white border-0 overflow-hidden">
+                    <div class="card-header bg-white p-0 d-flex align-items-center justify-content-center">
+                        <img src="Img/F1 Race Tracks Layout Information/Netherlands_Zandvoort.png" class="img-fluid"
+                            alt="Olanda">
+                    </div>
+                    <div class="card-body d-flex justify-content-center align-items-center">
+                        <h5 class="card-title text-center mb-0">Olanda</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 bg-dark text-white border-0 overflow-hidden">
+                    <div class="card-header bg-white p-0 d-flex align-items-center justify-content-center">
+                        <img src="Img/F1 Race Tracks Layout Information/Italy_Monza.png" class="img-fluid" alt="Italia">
+                    </div>
+                    <div class="card-body d-flex justify-content-center align-items-center">
+                        <h5 class="card-title text-center mb-0">Italia</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 bg-dark text-white border-0 overflow-hidden">
+                    <div class="card-header bg-white p-0 d-flex align-items-center justify-content-center">
+                        <img src="Img/F1 Race Tracks Layout Information/Azerbaijan_Baku.png" class="img-fluid"
+                            alt="Azerbaijan">
+                    </div>
+                    <div class="card-body d-flex justify-content-center align-items-center">
+                        <h5 class="card-title text-center mb-0">Azerbaijan</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 bg-dark text-white border-0 overflow-hidden">
+                    <div class="card-header bg-white p-0 d-flex align-items-center justify-content-center">
+                        <img src="Img/F1 Race Tracks Layout Information/Singapore_Marina_Bay_Street.png"
+                            class="img-fluid" alt="Singapore">
+                    </div>
+                    <div class="card-body d-flex justify-content-center align-items-center">
+                        <h5 class="card-title text-center mb-0">Singapore</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 bg-dark text-white border-0 overflow-hidden">
+                    <div class="card-header bg-white p-0 d-flex align-items-center justify-content-center">
+                        <img src="Img/F1 Race Tracks Layout Information/USA_Circuit_of_the_Americas.png"
+                            class="img-fluid" alt="Texas">
+                    </div>
+                    <div class="card-body d-flex justify-content-center align-items-center">
+                        <h5 class="card-title text-center mb-0">Texas</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 bg-dark text-white border-0 overflow-hidden">
+                    <div class="card-header bg-white p-0 d-flex align-items-center justify-content-center">
+                        <img src="Img/F1 Race Tracks Layout Information/Mexico_Hermanos_Rodriguez.png" class="img-fluid"
+                            alt="Messico">
+                    </div>
+                    <div class="card-body d-flex justify-content-center align-items-center">
+                        <h5 class="card-title text-center mb-0">Messico</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 bg-dark text-white border-0 overflow-hidden">
+                    <div class="card-header bg-white p-0 d-flex align-items-center justify-content-center">
+                        <img src="Img/F1 Race Tracks Layout Information/Brazil_Jose_Carlos_Pace.png" class="img-fluid"
+                            alt="Brasile">
+                    </div>
+                    <div class="card-body d-flex justify-content-center align-items-center">
+                        <h5 class="card-title text-center mb-0">Brasile</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 bg-dark text-white border-0 overflow-hidden">
+                    <div class="card-header bg-white p-0 d-flex align-items-center justify-content-center">
+                        <img src="Img/F1 Race Tracks Layout Information/USA_Las_Vegas_Strip.png" class="img-fluid"
+                            alt="Las Vegas">
+                    </div>
+                    <div class="card-body d-flex justify-content-center align-items-center">
+                        <h5 class="card-title text-center mb-0">Las Vegas</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 bg-dark text-white border-0 overflow-hidden">
+                    <div class="card-header bg-white p-0 d-flex align-items-center justify-content-center">
+                        <img src="Img/F1 Race Tracks Layout Information/Qatar_Lusail_International.png"
+                            class="img-fluid" alt="Qatar">
+                    </div>
+                    <div class="card-body d-flex justify-content-center align-items-center">
+                        <h5 class="card-title text-center mb-0">Qatar</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 bg-dark text-white border-0 overflow-hidden">
+                    <div class="card-header bg-white p-0 d-flex align-items-center justify-content-center">
+                        <img src="Img/F1 Race Tracks Layout Information/UAE_Abu_Dhabi_Yas_Marina.png" class="img-fluid"
+                            alt="Abu Dhabi">
+                    </div>
+                    <div class="card-body d-flex justify-content-center align-items-center">
+                        <h5 class="card-title text-center mb-0">Abu Dhabi</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

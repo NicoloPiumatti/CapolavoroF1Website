@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1f1f27;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 100px;
+}
+
+/* FONT FORMULA 1 */
+@font-face { 
+    font-family: 'Formula1Wide'; 
+    src: url('../Font/Formula1-Wide_web_0.ttf') format('truetype'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+header {
+    height: 80px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+    background-image: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 10px,
+        rgba(255, 255, 255, 0.10) 10px,
+        rgba(255, 255, 255, 0.10) 20px
+    );
+}
+
+.logo {
+    height: 40px;
+}
+
+.titoloHeader {
+    color: white;
+    font-family: 'Racing Sans One', sans-serif;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 20pt;
+    letter-spacing: -2px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.titoloHeader span {
+    position: relative;
+    top: 1.5px;
+}
+
+#sfondo {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(18,18,18,1)), url('../Img/sf25Monza.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 750px;
+    width: 100%;
+    padding-top: 275px;
+}
+
+#hero-title {
+    font-size: 65px;
+    font-weight: bold;
+    text-align: center;
+
+    /* FONT FORMULA 1 */
+    font-family: 'Formula1Wide', sans-serif;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    background: linear-gradient(to right, 
+    green 30%, 
+    white 35%, white 65%, 
+    red 70%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    white-space: pre-wrap;
+    align-items: center;
+    overflow: hidden;
+    clip-path: inset(0 100% 0 0);
+    border-right: 4px solid white;
+    animation: typing 3s steps(40) forwards, hide-cursor 0s forwards 4s;
+}
+
+@keyframes typing {
+    from { clip-path: inset(0 100% 0 0); }
+    to { clip-path: inset(0 0 0 0); }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+@keyframes hide-cursor {
+    to { border-color: transparent; }
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+
+li {
+    height: 40px;
+    padding: 0 15px;
+    border-radius: 10px;
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 11pt;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    cursor: pointer;
+    background-color: #2a2a2a;
+}
+
+
+#presentazione {
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.paragrafo {
+    font-size: 15pt;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+#presentazionePersonale {
+    padding: 20px;
+    margin-top: 50px;
+    border: 5px solid;
+    border-image: linear-gradient(to right, green 30%, white 35%, white 65%, red 70%) 1;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#chiSono {
+    font-size: 30pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/*CAROUSEL*/
+
+#carouselF1 {
+    width: 80%;
+    margin: 100px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    z-index: 1;
+}
+
+.carousel-item.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    right: 80px;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-caption h1 {
+    font-size: 55px;
+    font-weight: bold;
+    text-shadow: 0px 0px 15px rgba(0,0,0,0.8);
+    margin-bottom: 10px;
+}
+
+.carousel-caption p {
+    font-size: 22px;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+    margin: 0;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 12px 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.carousel-btn:hover {
+    background-color: rgb(255, 0, 0);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.prev-btn { left: 20px; }
+.next-btn { right: 20px; }
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+    z-index: 10;
+}
+
+.carousel-indicators .dot {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carousel-indicators .dot.active {
+    background-color: rgb(255, 0, 0);
+    width: 14px;
+    height: 14px;
+}
