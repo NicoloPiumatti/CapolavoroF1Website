@@ -23,6 +23,9 @@ body {
     src: url('../Font/Apax-TAG-Heuer-Medium.ttf');
 }
 
+/* ==========================================================
+   HEADER & NAVBAR UNIFICATA
+   ========================================================== */
 header {
     height: 80px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.5);
@@ -92,6 +95,8 @@ li a {
     color: #FFFFFF !important;
     text-decoration: none !important;
     font-size: 11pt !important;
+    font-weight: bold !important;
+    letter-spacing: 0.5px;
     width: 100% !important;
     text-align: center !important;
     display: block !important;
@@ -105,11 +110,91 @@ li:hover {
     background-color: #2a2a2a !important;
 }
 
-#tabRecordCampioni{
+/* ==========================================================
+   TABELLA CAMPIONI SCURA (INTEGRATA CON LO SFONDO)
+   ========================================================== */
+#tabRecordCampioni {
     margin-top: 120px;
     font-family: "txtTabCampioni", sans-serif;
 }
 
+/* ANNULLAMENTO SFONDI AUTOMATICI DI BOOTSTRAP */
+.tabella-campioni {
+    --bs-table-bg: transparent !important;
+    --bs-table-color: #ffffff !important;
+    --bs-table-border-color: #2a2c3a !important;
+    --bs-table-accent-bg: transparent !important;
+    --bs-table-hover-bg: transparent !important;
+    background-color: #14151d !important;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #2d2f3e !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.tabella-campioni td,
+.tabella-campioni th {
+    box-shadow: none !important; /* Rimuove lo sfondo interno predefinito di Bootstrap */
+}
+
+/* INTESTAZIONE TABELLA */
+.tabella-campioni thead tr {
+    background: linear-gradient(90deg, #1f202c 0%, #e10600 50%, #1f202c 100%) !important;
+    border-bottom: 3px solid #e10600 !important;
+}
+
+.tabella-campioni th {
+    color: #ffffff !important;
+    font-weight: 900 !important;
+    letter-spacing: 1.5px;
+    padding: 15px !important;
+    border: none !important;
+    background: transparent !important;
+}
+
+/* RIGHE TABELLA E CELLE */
+.tabella-campioni tbody tr {
+    background-color: #161720 !important;
+    border-bottom: 1px solid #232533 !important;
+}
+
+.tabella-campioni tbody tr:nth-child(even) {
+    background-color: #111218 !important;
+}
+
+.cella {
+    padding: 14px !important;
+    border: 1px solid #232533 !important;
+}
+
+/* STILI COLONNE PER LEGGIBILITÀ PERFETTA */
+.record-titolo {
+    color: #ffffff !important;
+    font-weight: bold !important;
+    font-size: 1rem;
+}
+
+.record-detentore {
+    color: #e2e8f0 !important;
+    font-weight: 600 !important;
+    font-size: 0.98rem;
+}
+
+.record-primato {
+    color: #ffb700 !important; /* Oro F1 */
+    font-weight: bold !important;
+    font-size: 1.05rem;
+}
+
+.record-desc {
+    color: #a0a8c0 !important;
+    font-weight: normal;
+    font-size: 0.92rem;
+}
+
+/* ==========================================================
+   EFFETTO HOVER ORIGINALE (INVARIATO)
+   ========================================================== */
 tbody tr {
     transition: transform 0.2s ease;
 }

@@ -29,7 +29,7 @@ body {
 }
 
 /* ==========================================================
-   HEADER & NAVBAR ORIGINALI
+   HEADER & NAVBAR UNIFICATA
    ========================================================== */
 header {
     height: 80px;
@@ -100,6 +100,8 @@ li a {
     color: #FFFFFF !important;
     text-decoration: none !important;
     font-size: 11pt !important;
+    font-weight: bold !important;
+    letter-spacing: 0.5px;
     width: 100% !important;
     text-align: center !important;
     display: block !important;
@@ -117,7 +119,7 @@ li:hover {
    STILE GRAFICO TELEMETRIA RACING (SOLO PER LE TABELLE)
    ========================================================== */
 #tabella-piloti {
-    margin-top: 120px; /* Distanziamento per evitare la sovrapposizione con la navbar fixed */
+    margin-top: 120px;
 }
 
 .tabella-f1-container {
