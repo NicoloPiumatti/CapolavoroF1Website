@@ -109,3 +109,15 @@ li:hover {
     margin-top: 120px;
     font-family: "txtTabCampioni", sans-serif;
 }
+
+tbody tr {
+    transition: transform 0.2s ease;
+}
+
+tbody tr:hover {
+    transform: scale(1.03);
+}
+
+tbody tr:hover .cella {
+    color: red !important;
+}

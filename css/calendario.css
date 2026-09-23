@@ -11,16 +11,9 @@ body {
     padding-bottom: 100px;
 }
 
-@font-face { 
-    font-family: 'Formula1Wide'; 
-    src: url('../Font/Formula1-Wide_web_0.ttf') format('truetype'); 
-    font-weight: normal; 
-    font-style: normal; 
-}
-
 @font-face {
     font-family: 'Calendario';
-    src: url('../Font/Formula1-Bold.ttf');
+    src: url('../Font/Apax-TAG-Heuer-Superbold.ttf');
 }
 
 header {

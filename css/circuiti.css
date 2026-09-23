@@ -105,8 +105,64 @@ li:hover {
     background-color: #2a2a2a !important;
 }
 
-#circuit
-{
+#circuit {
     margin-top: 120px;
     font-family: "fontCircuiti", sans-serif;
+}
+
+/* Stile comune Card e Effetto Hover */
+.circuito-card {
+    background-color: #2b2b36;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.circuito-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.7) !important;
+    z-index: 10;
+}
+
+/* Nome nazione in sovrapposizione all'immagine */
+.nazione-overlay {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 6px 14px;
+    border-radius: 4px;
+    border-left: 4px solid #e10600; /* Dettaglio rosso in stile F1 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+    z-index: 5;
+}
+
+/* Corpo card */
+.circuito-card .card-body {
+    background-color: #252530;
+    padding: 1.5rem;
+}
+
+/* Stile Titolo Circuito */
+.circuito-card .card-title {
+    color: #e10600 !important; /* Rosso corsa F1 (oppure #ffffff se preferisci bianco) */
+    font-size: 1.4rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.75rem;
+}
+
+/* Stile Descrizione Circuito */
+.circuito-card .card-text {
+    color: #d1d1d6;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    font-weight: normal;
 }

@@ -1,3 +1,6 @@
+/* ==========================================================
+   RESET & SFONDO BASE
+   ========================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -5,10 +8,10 @@
 }
 
 body {
-    background-color: #1f1f27;
-    color: white;
-    font-weight: bold;
-    padding-bottom: 100px;
+    background-color: #0d0e12;
+    color: #ffffff;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    padding-bottom: 80px;
 }
 
 @font-face { 
@@ -25,6 +28,9 @@ body {
     font-style: normal;
 }
 
+/* ==========================================================
+   HEADER & NAVBAR ORIGINALI
+   ========================================================== */
 header {
     height: 80px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.5);
@@ -107,7 +113,219 @@ li:hover {
     background-color: #2a2a2a !important;
 }
 
-#tabella{
-    margin-top: 120px;
-    font-family: "f1WideWeb", sans-serif;
+/* ==========================================================
+   STILE GRAFICO TELEMETRIA RACING (SOLO PER LE TABELLE)
+   ========================================================== */
+#tabella-piloti {
+    margin-top: 120px; /* Distanziamento per evitare la sovrapposizione con la navbar fixed */
+}
+
+.tabella-f1-container {
+    font-family: 'f1WideWeb', sans-serif;
+    background: #14151d;
+    border-radius: 10px;
+    border: 1px solid #2a2b3a;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    padding: 4px;
+}
+
+.f1-table {
+    margin-bottom: 0 !important;
+    border-collapse: collapse;
+    background-color: transparent !important;
+}
+
+/* INTESTAZIONE TABELLA TELEMETRIA */
+.header-titolo-tabella th {
+    background: linear-gradient(90deg, #1f202c 0%, #e10600 50%, #1f202c 100%) !important;
+    border-bottom: 2px solid #e10600 !important;
+}
+
+.titolo-tabella-main {
+    font-size: 1.15rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.badge-f1-tag {
+    background: #e10600;
+    color: #ffffff;
+    padding: 3px 10px;
+    border-radius: 3px;
+    font-size: 0.75rem;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+}
+
+.badge-f1-status {
+    background: #252736;
+    color: #a0a5ba;
+    padding: 3px 10px;
+    border-radius: 3px;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    border: 1px solid #3d4057;
+}
+
+/* COLONNE TABELLA */
+.header-colonne th {
+    background: #1a1b24 !important;
+    color: #8e93a6 !important;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #282a38 !important;
+    border-top: none !important;
+}
+
+/* RIGHE TABELLA E EFFETTO SELEZIONE TELEMETRICA */
+.riga-tabella {
+    background-color: #161720 !important;
+    transition: all 0.2s ease-in-out !important;
+}
+
+.riga-tabella:nth-child(even) {
+    background-color: #12131a !important;
+}
+
+.riga-tabella td {
+    border-bottom: 1px solid #20222e !important;
+    border-top: none !important;
+    color: #d1d5e3;
+    font-size: 0.95rem;
+}
+
+.nome-pilota {
+    color: #ffffff !important;
+}
+
+.gap-text {
+    color: #7b8094;
+    font-weight: 600;
+}
+
+/* EFFETTO SELEZIONE TELEMETRICA AL PASSAGGIO */
+.riga-tabella:hover {
+    background-color: #232533 !important;
+    transform: translateX(4px);
+    box-shadow: inset 4px 0 0 #e10600;
+}
+
+.riga-tabella:hover td {
+    color: #ffffff !important;
+}
+
+/* BADGES POSIZIONE */
+.badge-pos {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+    font-weight: 900;
+    font-size: 0.85rem;
+}
+
+.pos-normal {
+    background: #222431;
+    color: #9ba0b5;
+    border: 1px solid #323548;
+}
+
+/* STILI PODIO (1°, 2°, 3° POSTO) */
+.podio-1 {
+    background: linear-gradient(90deg, rgba(255, 183, 0, 0.12) 0%, rgba(22, 23, 32, 0.95) 100%) !important;
+}
+
+.badge-pos.pos-1 {
+    background: #ffb700;
+    color: #000000;
+    box-shadow: 0 0 10px rgba(255, 183, 0, 0.5);
+}
+
+.punti-gold {
+    color: #ffb700 !important;
+}
+
+.status-leader {
+    color: #00e676 !important;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+}
+
+.podio-2 {
+    background: linear-gradient(90deg, rgba(200, 200, 200, 0.1) 0%, rgba(22, 23, 32, 0.95) 100%) !important;
+}
+
+.badge-pos.pos-2 {
+    background: #c0c0c0;
+    color: #000000;
+}
+
+.podio-3 {
+    background: linear-gradient(90deg, rgba(205, 127, 50, 0.12) 0%, rgba(22, 23, 32, 0.95) 100%) !important;
+}
+
+.badge-pos.pos-3 {
+    background: #cd7f32;
+    color: #ffffff;
+}
+
+/* ==========================================================
+   RIGA DI SOGLIA CRITICA MATEMATICA (LOTTA PER IL TITOLO)
+   ========================================================== */
+.soglia-banner {
+    background: linear-gradient(90deg, 
+        rgba(0, 230, 118, 0.15) 0%, 
+        rgba(225, 6, 0, 0.3) 50%, 
+        rgba(255, 23, 68, 0.15) 100%);
+    border-top: 2px dashed #00e676;
+    border-bottom: 2px dashed #ff1744;
+}
+
+.soglia-tag.in-contention {
+    color: #00e676;
+    font-weight: 800;
+    font-size: 0.78rem;
+    letter-spacing: 1px;
+    text-shadow: 0 0 8px rgba(0, 230, 118, 0.4);
+}
+
+.soglia-tag.eliminated {
+    color: #ff1744;
+    font-weight: 800;
+    font-size: 0.78rem;
+    letter-spacing: 1px;
+    text-shadow: 0 0 8px rgba(255, 23, 68, 0.4);
+}
+
+.badge-cutoff {
+    background: #e10600;
+    color: #ffffff;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    box-shadow: 0 0 10px rgba(225, 6, 0, 0.5);
+}
+
+/* RIGHE ELIMINATI */
+.riga-eliminati {
+    opacity: 0.72;
+}
+
+.riga-eliminati:hover {
+    opacity: 1;
+}
+
+.pos-eliminated {
+    background: #23161a;
+    color: #ff5252;
+    border: 1px solid rgba(255, 23, 68, 0.4);
 }
